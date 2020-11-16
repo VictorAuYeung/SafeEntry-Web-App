@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeEntry</title>
+</head>
+<body>
+    <table border = "1px", width = "100%">
+        <tr>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>View Entries</th>
+            <th>All Records</th>
+        </tr>
+
+    </table>
+    <h1>
+        SafeEntry Check In
+    </h1>
+    <form>
+        {% if location == "LIB" %}
+        <h2>Library:</h2>
+        <label for="seatno">Seat Number:</label>
+        <input type="number" id="seatno" name="seatno" min="1" max="20">
+
+        {% elif location == "ICO" %}
+        <h2>ICode Lab:</h2>
+        <label for="seatno">Seat Number:</label>
+        <input type="number" id="seatno" name="seatno" min="1" max="20">
+
+        {% elif location == "JHL" %}
+        <h2>Junior High Lounge:</h2>
+        <label for="seatno">Seat Number:</label>
+        <input type="number" id="seatno" name="seatno" min="1" max="20">
+
+        {% elif location == "SHL" %}
+        <h2>Senior High Lounge:</h2>
+        <label for="seatno">Seat Number:</label>
+        <input type="number" id="seatno" name="seatno" min="1" max="20">
+        {% endif %}
+        
+        <p><input type = "submit", value = "Check-In"></p>
+
+      </form>
+
+</body>
+</html>

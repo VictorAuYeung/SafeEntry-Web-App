@@ -1,0 +1,20 @@
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: Arial;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+div {
+    border: 1px;
+    border-color: grey;
+}

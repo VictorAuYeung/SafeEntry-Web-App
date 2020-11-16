@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Homepage!</h1>
+    <p>This page is not meant to be seen in the final implementation, and only serves as a guide to show all the pages on this website.</p>
+    <h2>Check-In</h2>
+    <p>To check in, students will scan a QR code, which will bring them to this website, with the address /checkin/(venue code)/(seat number).</p>
+    <a href = "/checkin/LIB/1" target = "_blank">Click here</a> for the link for seat 01 in Library. (LIB for Library, ICO for iCodeLab, SHL for Senior High Lounge and JHL for Junior High Lounge)
+    <h2>Check-Out</h2>
+    <p>The checkout page will only appear after someone has checked in. After checking in, the checkout page will only consist of one button, "check out". Students click this button to check out.</p>
+    <p>Each checkout page for each seat in every venue is a unique sha256 string, preventing students from bruteforcing through all the urls and checking out for others.</p>
+    <p>If the seat has not been checked in, the check-out url for that seat will not work.</p>
+    <h2>Administrator</h2>
+    <p>This page is for administrators, and can show all records of entry and exit. Moreover, admins can filter based on Location, MatricNo and more.</p>
+    <a href = "/admin/entries" target = "_blank">Click here</a> for the link to the administator view.
+
+
+</body>
+</html>
